@@ -15,13 +15,10 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: white;
-  background: url('assets/mountains-universe-1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 header {
+  position: absolute;
   display: flex;
   font-weight: 400;
   font-size: 2.4rem;
@@ -46,14 +43,17 @@ a.active {
 }
 
 #app {
+  background: url('./assets/home.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  height: 100%;
+  height: 100vh;
 }
 
 .home {
-  margin-top: -12rem;
   justify-self: center;
   align-self: center;
   display: flex;
@@ -87,7 +87,7 @@ h1 {
 
 .universe,
 .exploration {
-  padding: 10.2rem;
+  padding: 18.5rem 10.2rem;
 }
 
 h2 {

@@ -17,9 +17,17 @@
     <header>
       <img src="./assets/logo.svg" alt="Logo da página" />
       <nav>
-        <a href="/" onclick="route()">Home</a>
-        <a href="/universe" onclick="route()">O Universo</a>
-        <a href="/exploration" onclick="route()">Exploração</a>
+        <a href="/" onclick="route(); setBackgroundAndMenu('/')" class="active"
+          >Home</a
+        >
+        <a href="/universe" onclick="route(); setBackgroundAndMenu('/universe')"
+          >O Universo</a
+        >
+        <a
+          href="/exploration"
+          onclick="route(); setBackgroundAndMenu('/exploration')"
+          >Exploração</a
+        >
       </nav>
     </header>
 
